@@ -1,0 +1,37 @@
+[
+  {
+    "id": "returning-pike",
+    "name": "Returning Pike",
+    "slot": "Weapon",
+    "act": 1,
+    "rarity": "Rare",
+    "region": "Goblin Camp",
+    "location": "Sold by Grat",
+    "obtainMethod": "Purchase",
+    "vendor": "Grat",
+    "buildTags": [
+      "Throw",
+      "Barbarian",
+      "Strength"
+    ],
+    "notes": "Core weapon for Throwzerker."
+  },
+
+  {
+    "id": "titanstring-bow",
+    "name": "Titanstring Bow",
+    "slot": "Weapon",
+    "act": 1,
+    "rarity": "Rare",
+    "region": "Zhentarim Hideout",
+    "location": "Sold by Brem",
+    "obtainMethod": "Purchase",
+    "vendor": "Brem",
+    "buildTags": [
+      "Archer",
+      "Strength",
+      "Gloomstalker"
+    ],
+    "notes": "Scales with Strength."
+  }
+]
