@@ -1,0 +1,50 @@
+[
+  {
+    "id": "throwzerker",
+    "name": "Throwzerker",
+    "description": "A Berserker/Fighter throwing build centered around Tavern Brawler.",
+    "levels": [
+      {
+        "level": 1,
+        "className": "Barbarian",
+        "notes": "Start with high Strength."
+      },
+      {
+        "level": 2,
+        "className": "Barbarian"
+      },
+      {
+        "level": 3,
+        "className": "Barbarian",
+        "subclass": "Berserker"
+      },
+      {
+        "level": 4,
+        "className": "Barbarian",
+        "feat": "Tavern Brawler"
+      }
+    ],
+    "items": [
+      {
+        "itemId": "returning-pike",
+        "act": 1,
+        "priority": "Core"
+      },
+      {
+        "itemId": "ring-of-flinging",
+        "act": 1,
+        "priority": "Core"
+      },
+      {
+        "itemId": "gloves-of-uninhibited-kushigo",
+        "act": 1,
+        "priority": "Core"
+      },
+      {
+        "itemId": "nyrulna",
+        "act": 3,
+        "priority": "Core"
+      }
+    ]
+  }
+]

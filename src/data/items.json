@@ -1,37 +1,86 @@
 [
-  {
+{
     "id": "returning-pike",
     "name": "Returning Pike",
-    "slot": "Weapon",
     "act": 1,
+    "slot": "Weapon",
     "rarity": "Rare",
     "region": "Goblin Camp",
     "location": "Sold by Grat",
-    "obtainMethod": "Purchase",
     "vendor": "Grat",
+    "acquisitionType": "Vendor",
+    "missable": true,
     "buildTags": [
-      "Throw",
-      "Barbarian",
-      "Strength"
+        "Throwzerker"
     ],
-    "notes": "Core weapon for Throwzerker."
-  },
+    "notes": "Primary throwing weapon until Nyrulna."
+},
 
   {
-    "id": "titanstring-bow",
-    "name": "Titanstring Bow",
-    "slot": "Weapon",
+  "id": "titanstring-bow",
+  "name": "Titanstring Bow",
+  "slot": "Weapon",
+  "act": 1,
+  "rarity": "Rare",
+  "region": "Zhentarim Hideout",
+  "location": "Sold by Brem",
+  "vendor": "Brem",
+  "acquisitionType": "Vendor",
+  "missable": true,
+  "buildTags": [
+    "Archer",
+    "Strength",
+    "Gloomstalker"
+  ],
+  "notes": "Scales with Strength."
+},
+
+  {
+    "id": "ring-of-flinging",
+    "name": "Ring of Flinging",
     "act": 1,
-    "rarity": "Rare",
-    "region": "Zhentarim Hideout",
-    "location": "Sold by Brem",
-    "obtainMethod": "Purchase",
-    "vendor": "Brem",
+    "slot": "Ring",
+    "rarity": "Uncommon",
+    "region": "Druid Grove",
+    "location": "Sold by Arron",
+    "vendor": "Arron",
+    "acquisitionType": "Vendor",
+    "missable": true,
     "buildTags": [
-      "Archer",
-      "Strength",
-      "Gloomstalker"
+        "Throwzerker"
     ],
-    "notes": "Scales with Strength."
-  }
+    "notes": "Adds extra damage to thrown attacks. One of the highest priority purchases in Act I."
+},
+
+{
+    "id": "gloves-of-uninhibited-kushigo",
+    "name": "Gloves of Uninhibited Kushigo",
+    "act": 1,
+    "slot": "Gloves",
+    "rarity": "Uncommon",
+    "region": "Grymforge",
+    "location": "Found after rescuing Baelen",
+    "acquisitionType": "Quest",
+    "missable": true,
+    "buildTags": [
+        "Throwzerker"
+    ],
+    "notes": "Core throwing gloves throughout most of the game."
+},
+
+{
+    "id": "nyrulna",
+    "name": "Nyrulna",
+    "act": 3,
+    "slot": "Weapon",
+    "rarity": "Legendary",
+    "region": "Circus of the Last Days",
+    "location": "Win the Akabi jackpot and access the hidden jungle.",
+    "acquisitionType": "Loot",
+    "missable": false,
+    "buildTags": [
+        "Throwzerker"
+    ],
+    "notes": "Best-in-slot throwing weapon and the endgame upgrade for Returning Pike."
+}
 ]

@@ -3,15 +3,16 @@ import { GearSlots } from "./enums/GearSlot";
 
 export const ItemSchema = z.object({
     id: z.string(),
-    name: z.string(),
 
-    slot: z.enum(GearSlots),
+    name: z.string(),
 
     act: z.union([
         z.literal(1),
         z.literal(2),
-        z.literal(3)
+        z.literal(3),
     ]),
+
+    slot: z.string(),
 
     rarity: z.string(),
 
@@ -19,13 +20,20 @@ export const ItemSchema = z.object({
 
     location: z.string(),
 
-    obtainMethod: z.string(),
-
     vendor: z.string().optional(),
+
+    acquisitionType: z.enum([
+        "Vendor",
+        "Loot",
+        "Quest",
+        "Crafted",
+    ]),
+
+    missable: z.boolean(),
 
     buildTags: z.array(z.string()),
 
-    notes: z.string()
+    notes: z.string().optional(),
 });
 
 export type Item = z.infer<typeof ItemSchema>;
