@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 
 import Sidebar from "./Sidebar";
+import ItemDrawer from "../items/ItemDrawer";
 
 interface Props {
     children: ReactNode;
@@ -23,6 +24,8 @@ export default function AppLayout({
             >
                 {children}
             </main>
+
+            <ItemDrawer />
 
         </div>
     );

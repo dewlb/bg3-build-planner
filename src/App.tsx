@@ -1,11 +1,17 @@
+import ItemDrawer from "./components/items/ItemDrawer";
 import AppLayout from "./components/layout/AppLayout";
+import { SelectedItemProvider } from "./context/SelectedItemContext";
 import ItemBrowser from "./pages/ItemBrowser";
 
 function App() {
     return (
-        <AppLayout>
-            <ItemBrowser />
-        </AppLayout>
+        <SelectedItemProvider>
+            <AppLayout>
+                <ItemBrowser />
+            </AppLayout>
+
+            <ItemDrawer />
+        </SelectedItemProvider>
     );
 }
 
