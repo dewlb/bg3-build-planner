@@ -7,29 +7,37 @@ import {
     Settings,
 } from "lucide-react";
 
+import { NavLink } from "react-router-dom";
+
 const links = [
     {
         name: "Items",
+        to: "/items",
         icon: Backpack,
     },
     {
         name: "Builds",
+        to: "/builds",
         icon: Sword,
     },
     {
-        name: "Party",
+        name: "Campaigns",
+        to: "/campaigns",
         icon: Users,
     },
     {
         name: "Vendors",
+        to: "/vendors",
         icon: ShoppingCart,
     },
     {
         name: "Favorites",
+        to: "/favorites",
         icon: Star,
     },
     {
         name: "Settings",
+        to: "/settings",
         icon: Settings,
     },
 ];
@@ -45,47 +53,43 @@ export default function Sidebar() {
                 p-6
             "
         >
-            <h1
-                className="
-                    mb-10
-                    text-3xl
-                    font-black
-                    text-amber-400
-                "
-            >
-                BG3 Planner
-            </h1>
+            <div className="mb-10 flex items-center gap-3">
+                <div className="text-3xl">
+                    ⚔️
+                </div>
+
+                <h1 className="text-3xl font-black text-amber-400">
+                    BG3 Planner
+                </h1>
+            </div>
 
             <nav className="space-y-2">
-
-                {links.map(({ name, icon: Icon }) => (
-
-                    <button
-                        key={name}
-                        className="
+                {links.map(({ name, to, icon: Icon }) => (
+                    <NavLink
+                        key={to}
+                        to={to}
+                        className={({ isActive }) =>
+                            `
                             flex
-                            w-full
                             items-center
                             gap-3
                             rounded-lg
                             px-3
                             py-3
-                            text-zinc-300
                             transition
 
-                            hover:bg-zinc-800
-                            hover:text-white
-                        "
+                            ${
+                                isActive
+                                    ? "bg-amber-500 text-black"
+                                    : "text-zinc-300 hover:bg-zinc-800 hover:text-white"
+                            }
+                            `
+                        }
                     >
-
                         <Icon size={20} />
-
                         {name}
-
-                    </button>
-
+                    </NavLink>
                 ))}
-
             </nav>
 
         </aside>

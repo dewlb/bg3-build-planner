@@ -1,0 +1,17 @@
+[
+    {
+        "id": "honor-run",
+
+        "name": "Honor Run",
+
+        "characters": [
+            {
+                "id": "karlach",
+
+                "characterName": "Karlach",
+
+                "buildId": "throwzerker"
+            }
+        ]
+    }
+]

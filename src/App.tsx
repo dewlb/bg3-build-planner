@@ -1,19 +1,13 @@
-import ItemDrawer from "./components/items/ItemDrawer";
-import AppLayout from "./components/layout/AppLayout";
 import { SelectedItemProvider } from "./context/SelectedItemContext";
-import BuildDetail from "./pages/BuildDetail";
-import ItemBrowser from "./pages/ItemBrowser";
 
-function App() {
+import AppRouter from "./router/AppRouter";
+
+export default function App() {
     return (
         <SelectedItemProvider>
-            <AppLayout>
-                <BuildDetail />
-            </AppLayout>
 
-            <ItemDrawer />
+            <AppRouter />
+
         </SelectedItemProvider>
     );
 }
-
-export default App;

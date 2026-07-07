@@ -6,6 +6,7 @@ import FilterBar from "../components/items/FilterBar";
 import { useItemQuery } from "../hooks/useItemQuery";
 
 import type { ItemQuery } from "../models/ItemQuery";
+import PageHeader from "../components/common/PageHeader";
 
 export default function ItemBrowser() {
 
@@ -28,9 +29,10 @@ export default function ItemBrowser() {
     return (
         <div className="mx-auto max-w-7xl p-8">
 
-            <h1 className="mb-8 text-5xl font-black">
-                Item Database
-            </h1>
+            <PageHeader
+                title="Item Database"
+                subtitle="Browse every obtainable item."
+            />
 
             <FilterBar
                 filters={filters}

@@ -4,14 +4,17 @@ import LevelTimeline from "../components/builds/LevelTimeline";
 
 import { useResolvedBuild } from "../hooks/useResolvedBuild";
 import { getItemsForAct } from "../services/BuildService";
+import { useParams } from "react-router-dom";
 
 export default function BuildDetail() {
+
+    const { buildId } = useParams();
 
     const {
         build,
         isLoading,
         error,
-    } = useResolvedBuild("throwzerker");
+    } = useResolvedBuild(buildId ?? "");
 
     if (isLoading)
         return <h1>Loading...</h1>;

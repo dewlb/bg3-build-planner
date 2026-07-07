@@ -1,7 +1,9 @@
 export interface CampaignCharacter {
+
     id: string;
 
-    name: string;
+    characterName: string;
 
     buildId: string;
+
 }

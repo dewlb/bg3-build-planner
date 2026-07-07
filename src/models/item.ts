@@ -1,5 +1,4 @@
 import { z } from "zod";
-import { GearSlots } from "./enums/GearSlot";
 
 export const ItemSchema = z.object({
     id: z.string(),

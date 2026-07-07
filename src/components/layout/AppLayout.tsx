@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 
 import Sidebar from "./Sidebar";
+import TopBar from "./Topbar";
 import ItemDrawer from "../items/ItemDrawer";
 
 interface Props {
@@ -15,15 +16,15 @@ export default function AppLayout({
 
             <Sidebar />
 
-            <main
-                className="
-                    flex-1
-                    overflow-y-auto
-                    bg-zinc-900
-                "
-            >
-                {children}
-            </main>
+            <div className="flex flex-1 flex-col">
+
+                <TopBar />
+
+                <main>
+                    {children}
+                </main>
+
+            </div>
 
             <ItemDrawer />
 

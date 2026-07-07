@@ -1,13 +1,11 @@
-export interface LevelPlan {
+import type { CampaignCharacter } from "./CampaignCharacter";
 
-    level:number;
+export interface Campaign {
 
-    classTaken:string;
+    id: string;
 
-    subclass?:string;
+    name: string;
 
-    feat?:string;
-
-    notes?:string;
+    characters: CampaignCharacter[];
 
 }
