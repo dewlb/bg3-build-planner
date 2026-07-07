@@ -13,6 +13,7 @@ import CampaignsPage from "../pages/CampaignsPage";
 import CampaignPage from "../pages/CampaignPage";
 import BuildsPage from "../pages/BuildsPage";
 import NotFoundPage from "../pages/NotFoundPage";
+import CharacterPlannerPage from "../pages/CharacterPlannerPage";
 
 export default function AppRouter() {
     return (
@@ -47,6 +48,11 @@ export default function AppRouter() {
                     <Route
                         path="/campaigns/:campaignId"
                         element={<CampaignPage />}
+                    />
+
+                    <Route
+                        path="/campaigns/:campaignId/characters/:characterId"
+                        element={<CharacterPlannerPage />}
                     />
 
                     <Route

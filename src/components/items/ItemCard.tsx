@@ -3,6 +3,12 @@ import { useSelectedItem } from "../../context/SelectedItemContext";
 
 interface Props {
     item: Item;
+
+    checked?: boolean;
+
+    showCheckbox?: boolean;
+
+    onToggle?: () => void;
 }
 
 export default function ItemCard({ item }: Props) {

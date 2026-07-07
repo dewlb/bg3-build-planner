@@ -7,10 +7,9 @@
         "characters": [
             {
                 "id": "karlach",
-
                 "characterName": "Karlach",
-
-                "buildId": "throwzerker"
+                "buildId": "throwzerker",
+                "collectedItemIds": []
             }
         ]
     }
